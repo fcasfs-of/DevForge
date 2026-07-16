@@ -1,10 +1,7 @@
 window.DevForgeRouter = {
     rotas: {
         lang: (idioma) => { 
-            if(idioma){
-                var idiomas="pt"===idioma?"en":"pt"; 
-                r=idiomas;  uI();
-            }
+            if(idioma){r="pt"===idioma?"en":"pt",uI()}
         },
         search: (termo) => {
             const input = document.getElementById("search-input");
