@@ -1,6 +1,6 @@
 window.DevForgeRouter = {
     rotas: {
-        lang: (idioma) => { var rds=idioma?"en":"pt"; localStorage.setItem(gL(),rds); uI(); },
+        lang: (idioma) => {  setTimeout(() => {  var rds=idioma?"en":"pt"; localStorage.setItem(gL(),rds); uI();   }, 200);  },
         search: (termo) => {
             const input = document.getElementById("search-input");
             if (input) input.value = termo;
