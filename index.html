@@ -20,6 +20,12 @@
         </div>
         
         <div class="controls">
+            <!-- Botão do Notificações -->
+            <button id="notify-toggle" class="control-btn" aria-label="Ver carrinho" style="position:relative">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15,17H9a1,1,0,0,0-1,1,4,4,0,0,0,8,0A1,1,0,0,0,15,17Z" style="fill: rgb(44, 169, 188);"></path><path d="M20.09,13.67,19,12.59V9A7,7,0,0,0,5,9v3.59L3.91,13.67A3.13,3.13,0,0,0,6.12,19H17.88a3.13,3.13,0,0,0,2.21-5.33Z" style="fill: currentColor;"></path></svg>
+                <span id="notify-count" style="position:absolute;top:-6px;right:-6px;background:#10b981;color:#fff;font-size:0.75rem;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center;font-weight:700">0</span>
+            </button>
+            
             <!-- Botão do Carrinho de Compras -->
             <button id="cart-toggle" class="control-btn" aria-label="Ver carrinho" style="position:relative">
                 <svg viewBox="0 0 24 24" width="20" height="20"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/></svg>
@@ -52,6 +58,8 @@
         <div class="grid" id="grid-projetos"></div>
     </main>
 
+     <div id="modal-notify"></div>
+    
     <div class="modal" id="modal-projeto">
         <div class="modal-content">
             <button class="close-btn" id="close-modal">
@@ -64,6 +72,8 @@
     <!-- Scripts do Sistema -->
     <script src="plists.js"></script>
     <script src="projetos.js"></script>
+    <script src="notify_list.js"></script>
+    <script src="notify.js"></script>
      <script src="config.js"></script>
     <script src="compra.js"></script>
     <script src="carrinho.js"></script>
