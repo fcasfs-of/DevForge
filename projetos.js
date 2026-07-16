@@ -1,4 +1,5 @@
-if (listaProjetosBrutos){
+if (!listaProjetosBrutos){   var listaProjetosBrutos=[];   }
+
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
 const listaProjetos = listaProjetosBrutos.map((projeto, index) => {
   const carimboTempo = Date.now().toString().slice(-4);
@@ -8,4 +9,4 @@ const listaProjetos = listaProjetosBrutos.map((projeto, index) => {
     id: parseInt(`${index}${carimboTempo}${numeroAleatorio}`)
   };
 });
-}
+
