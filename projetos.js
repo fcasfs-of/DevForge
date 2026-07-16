@@ -1,4 +1,4 @@
-if (!listaProjetosBrutos){   var listaProjetosBrutos=[];   }
+let listaProjetosBrutos = typeof listaProjetosBrutos !== 'undefined' ? listaProjetosBrutos : [];
 
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
 const listaProjetos = listaProjetosBrutos.map((projeto, index) => {
