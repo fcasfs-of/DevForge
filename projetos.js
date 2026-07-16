@@ -1,4 +1,5 @@
-const projetoslista = listaProjetosBrutos || [];
+function projetoslista_a(listaProjetosBrutos){
+  const projetoslista = listaProjetosBrutos || [];
 
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
 const listaProjetosp = projetoslista.map((projeto, index) => {
@@ -11,4 +12,7 @@ const listaProjetosp = projetoslista.map((projeto, index) => {
 });    
 
 const listaProjetos = listaProjetosp || [];
+}
+
+projetoslista_a("");
 
