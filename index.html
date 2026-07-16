@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevForge Premium - Soluções de Código Alta Performance</title>
+        <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEAklEQVR4AexXa0gUURQ+mq75aFWsJEoiDI2iqASLzDIikB5UPyr7Uwk9UNPUIpSCiDD7EUQ+Mk1/REha0MO0shQrFYXMnj4oDIoCIR/tuu6qW25zRnd37uzemZ3ddV1tB+7Mueece8757rlzzoy7bopf7jDFLxeAyU6gKwOuDNi4A//nEcqtUENKwQDUvB0xu3+/FKNwumQA1qX3sQNp5JlVtpEpOQMYPI6nb4YhMV8JBy4r4Gv3XyKMrLJBeNA0DD3KUXYgjTxCyU4TyQAa27WE6+ZOLcSe7YcLtwcN/MZ208w0dZDrDMo2EhYB6FeN7ST62h8zEx8m41atBtKLBli+YlDHPrk3tMGd24sWBVD0RANrUvvYs5z3SA0713pBbXYgRC+TmcRQ+950502U7MwQBVD4WG1wmfNQDT97RyFkzgwoSZNDTsIsCA40mti0QmbQdRRh9E7xGL7Ag5BcuW8867ERXvAsKxAy9/nCoS3ekB3vR+g6YiIKIGmHDxFHRfMwtH37Y+B5y9wgngk+bZcPNHzSwpmbKoOMT6AMS69mxPQd4etaOhcFELXUE1Yv9iTsFVdriHlp3RBEneqDpGtKuFs/RMi4E5Rh6V1/sg9wDVdmLS0KAA2n7yaz0PHdmIHEPCWcL1WBSmP5rg4wurgmmWmGaN+WYRGAyHBP2BNtLJ8Ze31Zn7ijNe+srzzVTDO810jPGOtE5GYRALSRddAPKs4FwPOLgRAzXm0u3TG+0Khjzcgut82GxQAwuCUhHrBw7gwkATswHgV2YsNNodZByxfru7QEAGSUDW3WHx3SEkA9U734PEvnggDwfMdlKyAiuRfCDvcQAzs0zcnmlTIoy/CHlpwgdiCtP3bm1hRUqQnb6At9ou8XH4Q3igqgjlmIFaa1SwtSjgp244Ljcrb0yn3cAAeW4aIUOWxcLjMXv1ke+kTfR3OU8PIjHQQVQGEVWevNejHDTNhOllyuCr8pcmVCdEElPRYqgM4fxlovZJwvC5s/9pLz+ThfFEyXoZw2urrpsVABqId1NHuCfC3dl+A6IaG5z3O9PhWAXkHqk/93xl0vJOPqSaHtDuA6U1FoAeRXGj/NaTpS+XYHgNULKwdWEKwkv1U6QPrIVSW8EqgmUgPX61MB+Pu66XUkP7F2x433j8jUXkBaqBSKORCKhQogdB75IyPmZCLlQrFQARzb6j2RMUmynbiNHgsVAHbUwhQ5rAr1AD9v64+TpEg5yv5MF8cOfuOEHDYIdHB3zhoTEkGUZwZAa24QfC6e7dDxmvmOwm8osc8PQQAmiJyQ4QIw2UlxZcDpMoB/Q848+BvmOkL8HWHnDrxNvww4uuNK9cdP7vTLAB+hs8+nfAb+AQAA///iWoGfAAAABklEQVQDAJsEsL9kMaWyAAAAAElFTkSuQmCC">
+
+    <link rel="stylesheet" href="style.css">
+ <style>
+
+</style>
+</head>
+<body class="dark-theme">
+
+    <header>
+        <div class="logo" style="color:var(--accent);display:flex;align-items:center;gap:0.6rem">
+            <svg viewBox="0 0 24 24" width="28" height="28" style="flex-shrink:0"><path d="M19 11h-2.17a4 4 0 0 0-3.33-3.33V5.5a1.5 1.5 0 0 0-3 0v2.17A4 4 0 0 0 7.17 11H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2zm-7 4a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm-5.75-9.3A1 1 0 0 1 7.6 4.3l1.91 1.1a1 1 0 1 1-1 1.74zM4.3 7.6a1 1 0 0 1 1.41-1.42l1.1 1.91a1 1 0 0 1-1.74 1zM22 20H2v2h20z" fill="currentColor"/></svg>
+            <span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;letter-spacing:-0.03em;font-size:1.35rem;background:linear-gradient(to right, var(--accent), var(--text));-webkit-background-clip:text;-webkit-text-fill-color:transparent">DevForge</span>
+        </div>
+        
+        <div class="controls">
+            <!-- Botão do Carrinho de Compras -->
+            <button id="cart-toggle" class="control-btn" aria-label="Ver carrinho" style="position:relative">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="currentColor"/></svg>
+                <span id="cart-count" style="position:absolute;top:-6px;right:-6px;background:#10b981;color:#fff;font-size:0.75rem;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center;font-weight:700">0</span>
+            </button>
+
+            <!-- Alternador de Idioma -->
+            <button id="lang-toggle" class="control-btn" aria-label="Mudar idioma">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.42 3.39 1.63 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.42-3.39-1.63-4.33-3.56zm2.95-8H5.08c.94-1.93 2.49-3.14 4.33-3.56-.6 1.11-1.06 2.31-1.38 3.56zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .67-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.94 1.93-2.49 3.14-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" fill="currentColor"/></svg>
+                <span id="lang-text">EN</span>
+            </button>
+            
+            <!-- Alternador de Tema -->
+            <button id="theme-toggle" class="control-btn" aria-label="Mudar tema">
+                <svg id="theme-icon" viewBox="0 0 24 24" width="20" height="20"></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 id="hero-title"></h1>
+            <p id="hero-desc"></p>
+            <div class="search-container">
+                <svg viewBox="0 0 24 24" width="20" height="20" class="search-icon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="currentColor"/></svg>
+                <input type="text" id="search-input" placeholder="Buscar projetos...">
+            </div>
+        </section>
+
+        <div class="grid" id="grid-projetos"></div>
+    </main>
+
+    <div class="modal" id="modal-projeto">
+        <div class="modal-content">
+            <button class="close-btn" id="close-modal">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/></svg>
+            </button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts do Sistema -->
+    <script src="plists.js"></script>
+    <script src="projetos.js"></script>
+     <script src="config.js"></script>
+    <script src="compra.js"></script>
+    <script src="carrinho.js"></script>
+     <script src="checkout.js"></script>
+    <script src="paginacao.js"></script>
+    <script src="script1.js"></script>
+    <script src="roteamento.js"></script>
+</body>
+</html>
