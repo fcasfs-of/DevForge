@@ -1,6 +1,11 @@
 function vlistaProjetos(dd){
-  function verificarLista(lista) {    return lista || [];   }
-const listaProjetosBrutodfs = verificarLista(dd);
+  
+function obterListaValida(lista) {
+    if (Array.isArray(lista) && lista.length > 0) {        return lista;    }
+    return [];
+}
+  
+  const listaProjetosBrutodfs = obterListaValida(dd);
 
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
 const listaProjetos = listaProjetosBrutodfs.map((projeto, index) => {
