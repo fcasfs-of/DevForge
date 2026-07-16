@@ -1,8 +1,11 @@
-function projetoslista_a(listaProjetosBrutos){
-  const projetoslista = listaProjetosBrutos || [];
+var listaProjetosBrutos=listaProjetosBrutos;
+
+  if (!listaProjetosBrutos || !Array.isArray(listaProjetosBrutos)) {    listaProjetosBrutos=[];  } 
+
+const projetosValidos = Array.isArray(listaProjetosBrutos) ? listaProjetosBrutos : [];
 
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
-const listaProjetosp = projetoslista.map((projeto, index) => {
+const listaProjetos = projetosValidos.map((projeto, index) => {
   const carimboTempo = Date.now().toString().slice(-4);
   const numeroAleatorio = Math.floor(100 + Math.random() * 900);
   return {
@@ -10,7 +13,4 @@ const listaProjetosp = projetoslista.map((projeto, index) => {
     id: parseInt(`${index}${carimboTempo}${numeroAleatorio}`)
   };
 });    
-
-const listaProjetos = listaProjetosp || [];
-}
 
