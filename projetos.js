@@ -14,5 +14,3 @@ const listaProjetosp = projetoslista.map((projeto, index) => {
 const listaProjetos = listaProjetosp || [];
 }
 
-projetoslista_a("");
-
