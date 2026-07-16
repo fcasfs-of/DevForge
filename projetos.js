@@ -10,5 +10,5 @@ const listaProjetosp = projetoslista.map((projeto, index) => {
   };
 });    
 
-const listaProjetos = listaProjetosp || {};
+const listaProjetos = listaProjetosp || [];
 
