@@ -1,7 +1,7 @@
 window.DevForgeRouter = {
     rotas: {
         lang: (idioma) => { 
-            if (idioma === "en" || idioma === "pt") {  r=idioma;  window.uI();   }
+            if (idioma === "en" || idioma === "pt") {  r=idioma;  f (typeof uI === "function") {  uI(); }   }
         },
         search: (termo) => {
             const input = document.getElementById("search-input");
