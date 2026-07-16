@@ -10,5 +10,5 @@ const listaProjetosp = projetoslista.map((projeto, index) => {
   };
 });    
 
-const listaProjetos = (Array.isArray(listaProjetosp) && listaProjetosp.length > 0) ? listaProjetosp : [];
+const listaProjetos = listaProjetosp || {};
 
