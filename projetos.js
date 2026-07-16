@@ -1,4 +1,4 @@
-const projetoslista = (Array.isArray(listaProjetosBrutos) && listaProjetosBrutos.length > 0) ? listaProjetosBrutos : [];
+const projetoslista = listaProjetosBrutos || [];
 
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
 const listaProjetosp = projetoslista.map((projeto, index) => {
