@@ -1,11 +1,9 @@
-function vlistaProjetos(dd){
-  
 function obterListaValida(lista) {
-    if (Array.isArray(lista) && lista.length > 0) {        return lista;    }
+    if (Array.isArray(lista) && lista.length > 0) {   return lista;    }
     return [];
 }
   
-  const listaProjetosBrutodfs = obterListaValida(dd);
+  const listaProjetosBrutodfs = obterListaValida(listaProjetosBrutos);
 
   if(listaProjetosBrutodfs){
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
@@ -16,9 +14,6 @@ const listaProjetos = listaProjetosBrutodfs.map((projeto, index) => {
     ...projeto,
     id: parseInt(`${index}${carimboTempo}${numeroAleatorio}`)
   };
-});     }
-}
-
-
-document.addEventListener("DOMContentLoaded",function(){   vlistaProjetos();    }
+});    
+  }
 
