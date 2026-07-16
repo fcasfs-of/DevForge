@@ -2,7 +2,8 @@ window.DevForgeRouter = {
     rotas: {
         lang: (idioma) => { 
             if(idioma){
-                r="pt"===idioma?"en":"pt"; uI();
+                var idiomas="pt"===idioma?"en":"pt"; 
+                r=idiomas;  uI();
             }
         },
         search: (termo) => {
