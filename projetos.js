@@ -3,11 +3,11 @@ function obterListaValida(lista) {
     return [];
 }
   
-  const listaProjetosBrutodfs = obterListaValida(listaProjetosBrutos);
+  const listaProjetosBrutos = obterListaValida(listaProjetosBrutos);
 
-  if(listaProjetosBrutodfs){
+  if(listaProjetosBrutos){
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
-const listaProjetos = listaProjetosBrutodfs.map((projeto, index) => {
+const listaProjetos = listaProjetosBrutos.map((projeto, index) => {
   const carimboTempo = Date.now().toString().slice(-4);
   const numeroAleatorio = Math.floor(100 + Math.random() * 900);
   return {
