@@ -19,5 +19,5 @@ const listaProjetos = listaProjetosBrutodfs.map((projeto, index) => {
 }
 
 
-vlistaProjetos([]);
+vlistaProjetos();
 
