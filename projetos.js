@@ -1,13 +1,8 @@
-function obterListaValida(lista) {
-    if (Array.isArray(lista) && lista.length > 0) {   return lista;    }
-    return [];
-}
-  
-  const listaProjetosBrutos = obterListaValida(listaProjetosBrutos);
+const projetoslista = (listaProjetosBrutos && listaProjetosBrutos.length) ? listaProjetosBrutos : [];
 
-  if(listaProjetosBrutos){
+  if(projetoslista){
 // Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
-const listaProjetos = listaProjetosBrutos.map((projeto, index) => {
+const listaProjetos = projetoslista.map((projeto, index) => {
   const carimboTempo = Date.now().toString().slice(-4);
   const numeroAleatorio = Math.floor(100 + Math.random() * 900);
   return {
