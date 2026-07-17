@@ -1,1 +1,1 @@
-(()=>{const a=new URLSearchParams(window.location.search);navegar(a.get("pg")||"sobre",a.get("lang")||"pt",a.get("theme")||"dark")})();
+(()=>{const a=new URLSearchParams(window.location.search);navegar(a.get("pg")||"sobre",localStorage.getItem(window.sysConfig?.chaveIdioma||"premium-lang")||"pt",localStorage.getItem(window.sysConfig?.chaveTheme||"premium-theme")||"dark")})();
