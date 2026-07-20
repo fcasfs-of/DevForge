@@ -72,10 +72,21 @@ window.DevForgeRouter = {
       const valor = params.get(rota);
       if (valor) this.rotas[rota](valor);
     });
+
+    window.uT = () => {
+      const btn = document.getElementById("reset-filters-btn");
+      if (btn) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const temFiltroAtivo = ['promo-checkbox', 'featured-checkbox', 'available-checkbox'].some(id => document.getElementById(id)?.checked);
+        const temCategoria = urlParams.has('categoria');
+        btn.classList.toggle("inactive", temFiltroAtivo || temCategoria);
+      }
+    };
+
     if (typeof window.uT === "function") window.uT();
     window.uP();
   }
 };
 
 
-document.addEventListener("DOMContentLoaded",()=>{window.DevForgeRouter.executar();const sF=()=>{const e=new URLSearchParams(window.location.search);[{id:'promo-checkbox',param:'promo'},{id:'featured-checkbox',param:'featured'},{id:'available-checkbox',param:'available'}].forEach(({id,param})=>{const el=document.getElementById(id);if(el&&el.checked){e.set(param,'true')}else{e.delete(param)}});if(window.paginacaoEstado.paginaAtual>1){e.set('pg',window.paginacaoEstado.paginaAtual)}else{e.delete('pg')}window.history.replaceState({},'',e.toString()?`?${e.toString()}`:window.location.pathname)};['promo-checkbox','featured-checkbox','available-checkbox'].forEach(id=>document.getElementById(id)?.addEventListener("change",sF));document.getElementById("reset-filters-btn")?.addEventListener("click",()=>{const e=new URLSearchParams(window.location.search);['promo','featured','available','pg','categoria'].forEach(p=>e.delete(p));window.history.replaceState({},'',e.toString()?`?${e.toString()}`:window.location.pathname)})});
+document.addEventListener("DOMContentLoaded",()=>{window.DevForgeRouter.executar();const sF=()=>{const e=new URLSearchParams(window.location.search);[{id:'promo-checkbox',param:'promo'},{id:'featured-checkbox',param:'featured'},{id:'available-checkbox',param:'available'}].forEach(({id,param})=>{const el=document.getElementById(id);if(el&&el.checked){e.set(param,'true')}else{e.delete(param)}});if(window.paginacaoEstado.paginaAtual>1){e.set('pg',window.paginacaoEstado.paginaAtual)}else{e.delete('pg')}window.history.replaceState({},'',e.toString()?`?${e.toString()}`:window.location.pathname)};['promo-checkbox','featured-checkbox','available-checkbox'].forEach(id=>document.getElementById(id)?.addEventListener("change",sF));document.getElementById("reset-filters-btn")?.addEventListener("click",()=>{const e=new URLSearchParams(window.location.search);['promo','featured','available','pg'].forEach(p=>e.delete(p));['promo-checkbox','featured-checkbox','available-checkbox'].forEach(id=>{const el=document.getElementById(id);if(el)el.checked=false});window.paginacaoEstado.paginaAtual=1;if(typeof window.uT==='function')window.uT();window.uP();window.history.replaceState({},'',e.toString()?`?${e.toString()}`:window.location.pathname)})});
