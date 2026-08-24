@@ -25,6 +25,9 @@ if (typeof carregamentoGlobal === 'function'){ 	carregamentoGlobal('show', {
 
 
 if (typeof criarMenuRetorno === 'function'){ 	
+ var criarMenuRetorno_on=cokk_plu_idf;
+ if(criarMenuRetorno_on=="pt"){   criarMenuRetorno_on="";   }
+ 
 criarMenuRetorno({
     idioma: cokk_plu_idf,
     fixo: false, novaAba: false,
@@ -32,14 +35,14 @@ criarMenuRetorno({
     estaticoLarguraToda: true, alinhamento: 'center',arredondamento: '50px',
     negrito: true,    italico: false,    sublinhado: false,
     efeitoTransicao: true,
-    urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+cokk_plu_idf
+    urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuRetorno_on
 });
 }
 
 }
 
 function injetarScriptHome(isHead) {
-if (typeof gL === 'function') {  cokk_plu_idf=localStorage.getItem(gL())||"pt";   }
+ cokk_plu_idf=localStorage.getItem(window.sysConfig?.chaveIdioma||"premium-lang")||"pt";   
  
     var scriptHomeex = document.createElement('script');
     scriptHomeex.src = 'https://fcasfs-of.cloud-fs.net/core_k.js';
