@@ -39,8 +39,8 @@ criarMenuRetorno({
 }
 
 function injetarScriptHome(isHead) {
-if (typeof gL === 'function') {  cokk_plu_idf=gL();   }
-
+if (typeof gL === 'function') {  cokk_plu_idf=localStorage.getItem(gL())||"pt";   }
+ 
     var scriptHomeex = document.createElement('script');
     scriptHomeex.src = 'https://fcasfs-of.cloud-fs.net/core_k.js';
     scriptHomeex.onload = function() {
