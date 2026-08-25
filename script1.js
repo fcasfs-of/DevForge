@@ -6,8 +6,8 @@ function btnHomeRt_stare(btnHomeRt,lnf){
 }
 function btnHomeRt_scolo(btnHomeRt,lnf){
   if (lnf){ 	   if(typeof btnHomeRt.atualizar === 'function'){  
- if(lnf=="dark"){        btnHomeRt.atualizar({           corFundo: '#2563eb',    corTexto: '#ffffff',    corHover: '#1d4ed8',  bordaCor: '#3b82f6',    bordaTamanho: '2px' });    }
- else {     btnHomeRt.atualizar({        corFundo: '#111827',    corTexto: '#ffffff',    corHover: '#1f2937',   bordaCor: '#3b82f6',    bordaTamanho: '2px' });       }
+ if(lnf=="dark"){        btnHomeRt.atualizar({  corFundo: '#2563eb',    corTexto: '#ffffff',    corHover: '#1d4ed8'  });    }
+ else {     btnHomeRt.atualizar({  corFundo: '#111827',    corTexto: '#ffffff',    corHover: '#1f2937'  });       }
   }  }
 }
  
@@ -50,6 +50,7 @@ btnHomeRt = criarMenuRetorno({
     estaticoLarguraToda: true, alinhamento: 'center',arredondamento: '50px', estaticoLarguraInclui_arredondamento:true, 
     negrito: true,    italico: false,    sublinhado: false,
     efeitoTransicao: true,
+    bordaCor: '#3b82f6',    bordaTamanho: '2px'
     urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuRetorno_on
 });
 
