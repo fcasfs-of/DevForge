@@ -53,7 +53,7 @@ btnHomeRt = criarMenuRetorno({
     urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuRetorno_on
 });
 
-btnHomeRt_scolo(btnHomeRt,localStorage.getItem(gT())||"dark");
+btnHomeRt_scolo(btnHomeRt,localStorage.getItem("premium-theme")||"dark");
   
 }
 
