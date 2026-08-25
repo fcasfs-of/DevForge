@@ -50,7 +50,7 @@ btnHomeRt = criarMenuRetorno({
     estaticoLarguraToda: true, alinhamento: 'center',arredondamento: '50px', estaticoLarguraInclui_arredondamento:true, 
     negrito: true,    italico: false,    sublinhado: false,
     efeitoTransicao: true,
-    bordaCor: '#3b82f6',    bordaTamanho: '2px'
+    bordaCor: '#3b82f6',    bordaTamanho: '2px',
     urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuRetorno_on
 });
 
