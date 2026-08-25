@@ -1,5 +1,8 @@
 function btnHomeRt_stare(btnHomeRt,lnf){
-  if (lnf){ 	   if(typeof btnHomeRt.atualizar === 'function'){  btnHomeRt.atualizar({ idioma:lnf });  }  }
+  if (lnf){ 	   if(typeof btnHomeRt.atualizar === 'function'){  
+   var criarMenuReftorno_on=lnf;
+ if(criarMenuReftorno_on=="pt"){   criarMenuReftorno_on="";   }
+    btnHomeRt.atualizar({ idioma:lnf, urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuReftorno_on });  }  }
 }
  
 
