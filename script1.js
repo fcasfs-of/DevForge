@@ -32,7 +32,7 @@ criarMenuRetorno({
     idioma: cokk_plu_idf,
     fixo: false, novaAba: false,
     posicao: 'top-center',
-    estaticoLarguraToda: true, alinhamento: 'center',arredondamento: '50px',
+    estaticoLarguraToda: true, alinhamento: 'center',arredondamento: '50px', estaticoLarguraInclui_arredondamento:true, 
     negrito: true,    italico: false,    sublinhado: false,
     efeitoTransicao: true,
     urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuRetorno_on
