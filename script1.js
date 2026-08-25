@@ -4,6 +4,12 @@ function btnHomeRt_stare(btnHomeRt,lnf){
  if(criarMenuReftorno_on=="pt"){   criarMenuReftorno_on="";   }
     btnHomeRt.atualizar({ idioma:lnf, urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuReftorno_on });  }  }
 }
+function btnHomeRt_scolo(btnHomeRt,lnf){
+  if (lnf){ 	   if(typeof btnHomeRt.atualizar === 'function'){  
+ if(lnf=="dark"){       btnHomeRt.atualizar({        corFundo: '#111827',    corTexto: '#9ca3af',    corHover: '#1f2937',   bordaCor: '#3b82f6',    bordaTamanho: '2px' });     }
+ else {       btnHomeRt.atualizar({           corFundo: '#2563eb',    corTexto: '#ffffff',    corHover: '#1d4ed8',  bordaCor: '#3b82f6',    bordaTamanho: '2px' });     }
+  }  }
+}
  
 
 function gerarMenu(ff, l, i, id, config) { const m = ff; if (m && typeof criarSidebar === "function") { m.innerHTML = criarSidebar(l, i, id); if (typeof SidebarAPI !== "undefined" && typeof SidebarAPI.configurar === "function") SidebarAPI.configurar(config); } }
@@ -46,6 +52,9 @@ btnHomeRt = criarMenuRetorno({
     efeitoTransicao: true,
     urlPrincipal: 'https://fcasfs-of.cloud-fs.net/'+criarMenuRetorno_on
 });
+
+btnHomeRt_scolo(btnHomeRt,localStorage.getItem(gT())||"dark");
+  
 }
 
 }
