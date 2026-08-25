@@ -1,6 +1,6 @@
 function btnHomeRt_stare(lnf){
-  if (lnf && typeof btnHomeRt.atualziar === 'function'){ 	
-   if(lnf!=""){  btnHomeRt.atualziar({ idioma:lnf });  }
+  if (lnf && btnHomeRt){ 	
+   if(lnf!="" && typeof btnHomeRt.atualziar === 'function'){  btnHomeRt.atualziar({ idioma:lnf });  }
   }
 }
  
