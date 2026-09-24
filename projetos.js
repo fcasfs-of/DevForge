@@ -4,13 +4,16 @@ var listaProjetosBrutos=listaProjetosBrutos;
 
 const projetosValidos = Array.isArray(listaProjetosBrutos) ? listaProjetosBrutos : [];
 
-// Lógica de Autogeração: Varre a lista bruta criando IDs numéricos aleatórios que nunca se repetem
+
 const listaProjetos = projetosValidos.map((projeto, index) => {
-  const carimboTempo = Date.now().toString().slice(-4);
-  const numeroAleatorio = Math.floor(100 + Math.random() * 900);
+  if (projeto.id) {    return projeto;  }
+
+  const carimboTempo = Date.now();
+  const numeroAleatorio = Math.floor(Math.random() * 10000);
+  
   return {
     ...projeto,
-    id: parseInt(`${index}${carimboTempo}${numeroAleatorio}`)
+    id: parseInt(`${carimboTempo}${index}${numeroAleatorio}`)
   };
-});    
+});
 
