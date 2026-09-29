@@ -1,7 +1,7 @@
 var listaProjetosBrutos = [
 {
   "id": Number("0001002"),
-  "versao": "2.0.0.0",
+  "versao": "2.0.0.0 +",
   "preco": "20,00",
   "disponivel": true,
   "promo": false,
